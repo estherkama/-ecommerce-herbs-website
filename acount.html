@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALL Produucts herbs center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="herbs.css">
+    <link rel="stylesheet" href="https://stackpath.bootstarpcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.html">
+</head>
+<body style="background-color: aqua;">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="herbs.html"><img src="logo.PNG" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="herbs.html">Home</a></li>
+                    <li><a href="product.html">product</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="acount.html">Account</a></li>
+                    <li><a href="cart.html"><img src="cart icon.jpg" width="30px" height="30px"></a></li>
+                    <li><a href=""><img src="menu icon.png" height="24px" width="20px" ></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!---------------account page--------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col2">
+                <img src="images.jpg" width="100%">
+            </div>
+            <div class="col2">
+              <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">login</span>
+                    <span onclick="register()">register</span>
+                    <hr id="indicator">
+                </div>
+                <form id="loginform">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">login</button>
+                    <a href="">forgot password</a>
+                </form>
+                <form id="regform">
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">register</button>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------footer----------->
+<!------------footer----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our APP</h3>
+                <P>Download App for Android and ios mobile phone</P>
+                <div class="App-logo">
+                    
+                    <h4>For App Store or Google play</h4>
+                    <div class="row">
+                      <img src="https://assets.getpocket.com/web-ui/assets/apple-app-store-badge.2928664fe1fc6aca88583a6f606d60ba.svg"alt="app store">
+                      <img src="https://assets.getpocket.com/web-ui/assets/google-play-badge.db9b21a1c41f3dcd9731e1e7acfdbb57.png"alt="Google" height="60px" width="160px">
+                  </div>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="download (1).jpg" >
+                <P>Our expectations and aim <br> is to deliver you the best quality and quantity</P>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+               <a href=""><ul>
+                    <li>coupons</li>
+                    <li>Blog post</li>
+                    <li>Return policy</li>
+                    <li>join Affiliate</li>
+                </ul>  </a>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+              <a href=""><ul>
+                    <img src="">
+                    <li>facebook</li>
+                    <img src="twitter.png">
+                    <li>Twitter</li>
+                    <img src="instagram icon.jpeg" alt="">
+                    <li>Instagram</li>
+                    <img src="youtube app.PNG" alt="">
+                    <li>YouTube</li>
+                </ul></a>   
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">copyright 2023- Easy Tutorials</p>
+    </div>
+    <!------------js for toggle menu-------------------->
+<script>
+var menuItems = document.getElementById("menuItems");
+menuItems.style.maxHeight ="0px";
+function menutoggle(){
+    if(menuItems.style.maxHeight =="0px"){
+        menuItems.style.maxHeight ="200px"
+    }
+    else{
+        menuItems.style.maxHeight ="0px"
+    }
+}
+</script>
+<!------------js for toggle form-------------------->
+<script>
+   var loginform =document.getElementById("loginform") 
+   var regform =document.getElementById("regform") 
+   var indicator =document.getElementById("indicator") 
+    
+    function register(){
+        regform.style.transform= "translate(0px)";
+        loginform.style.transform= "translate(0px)";
+        indicator.style.transform= "translate(100px)";
+    }
+
+    function login(){
+        regform.style.transform= "translate(300px)";
+        loginform.style.transform= "translate(300px)";
+        indicator.style.transform= "translate(0px)";
+    }
+</script>
+</div>
+</body>
+</html>
